@@ -1,0 +1,18 @@
+server:
+  port: 8849
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: 123456
+    url: jdbc:mysql://node3:3306/kongguan?serverTimezone=UTC
+  redis:
+    host: node3
+    port: 6379
+    database: 15
+
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  mapper-locations: classpath:/mapper/*.xml

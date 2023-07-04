@@ -1,0 +1,12 @@
+server:
+  port: 8848
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: 123456
+    url: jdbc:mysql://node3:3306/kongguan?autoReconnect=true&autoReconnectForPools=true&failOverReadOnly=false&serverTimezone=UTC
+  redis:
+    host: node3
+    port: 6379
+    database: 15
